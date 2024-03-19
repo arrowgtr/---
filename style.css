@@ -1,0 +1,375 @@
+html, body {
+  background: linear-gradient(to bottom, hsl(173, 100%, 24%), #001f3f); /* Gradient from dark electric blue to black */
+  background-size: auto;
+  background-repeat: repeat-y;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: Arial, sans-serif; /* Optional: Set a default font family */
+  height: 2500px; /* Set the height to 2500px */
+}
+
+
+/* Styles for header and navigation */
+.header {
+    background-image: url('https://raw.githubusercontent.com/arrowgtr/cryptoprice/main/sources/header.png'); /* URL of your header image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.header-nav {
+    position: relative; 
+    left: 48%;
+    bottom: -82px;
+    width: 90%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-color: #316879; /* Blue metallic color */
+    padding: 5px 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+
+.header-nav ul {
+   
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 80px; /* Adjust the margin-right for spacing */
+}
+
+.header-nav ul li:last-child {
+    margin-left: 40px; /* Remove margin-right for the last list item */
+}
+
+.header-nav ul li a {
+    position: relative;
+    left: 10px%;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to bottom, hsl(173, 100%, 24%), #001f3f);
+    transition: width 0.3s ease;
+}
+
+.header-nav ul li a:hover::after {
+    width: calc(100% - 20px); /* Αφήνουμε κενό 10px στο αριστερό και δεξί περιθώριο */
+    height: 4px; /* Αυξάνουμε το ύψος του περιγράμματος */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); /* Προσθέτουμε σκίασμα */
+}
+
+
+ /* Styles for footer */
+footer {
+    position: absolute; /* Set the position to relative */
+    top: 2550px; /*
+    background-color: #00796B; /* Green electric emerald color */
+    color: #07b17b;
+    width: 95%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px; /* Add margin-top to create space between footer and content */
+}
+
+.footer-nav {
+    top: 121px; 
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-nav ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: #15c289;
+    text-decoration: none;
+}
+
+
+
+
+
+table {
+    
+    position: relative;
+    background-color: #333333;
+    padding: 21px 0px 0px 0px;
+    top: 49px;
+    left: 253px;
+    width:65%;
+    font-style: bold ;
+    
+}
+
+th, td {
+    font-style: bold ;
+font-size: 2.1em;
+    text-align: center;
+}
+th {
+
+    left: -5px;
+    background-color: #33333300;
+    color: #0fcebb;
+    
+}
+
+.crypto-name {
+    position: relative;
+    bottom: 25px;
+       color: #; /* Set the color of the crypto name */
+    font-size: 1.1em; /* Set the font size of the crypto name */
+    font-weight: bold; /* Optionally, make the crypto name bold */
+    margin-left: 10px; /* Optionally, add left margin to separate icon and name */
+}
+
+
+.crypto-icon {
+   margin-right: 5px; /* Adjust the spacing between icon and text as needed */
+   margin-block: 5px;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    width: 64px; /* Set width to 1em for all icons */
+    height: 64px; /* Set height to 1em for all icons */
+}
+
+td {
+   
+color: #0fcebb;
+}
+
+
+td#btc-price,
+td#eth-price,
+td#sol-price,
+td#bnb-price
+{
+    font-style: bold;
+    color: #0fcebb;
+    }
+ td#btc-market-cap,
+ td#eth-market-cap,
+ td#sol-market-cap,
+ td#bnb-market-cap{
+    font-style: bold;
+        color: #0fcebb;
+    }
+
+
+    .price-up {
+        color: green;
+        font-weight: bold;
+    }
+    
+    .price-down {
+        color: red;
+        font-weight: bold;
+    }
+.exchanger-icon {
+            
+            height: 45px; /* Adjust the height as needed */
+            margin-right: 15px;
+        }
+        
+
+        .cryptohopper-web-widget{
+            position: absolute;
+            bottom: 44px;
+            left: 22px;
+            width: 97%;
+}
+
+
+
+
+
+
+
+  /* Additional styles for the widget container */
+  #widgetContainer {
+    display: none; /* Hide the widget initially */
+    margin-top: 20px;
+  }
+
+ /* CSS styles for the widget container */
+ .coin-heatmap-widget-container {
+    position: relative;
+    bottom:461px;
+    left: 1340px;
+    width: 0px; /* Adjust the width as needed */}
+
+
+
+ /* CSS styles for the frame */
+ .frame {
+    position: relative; 
+    bottom: 362px;
+    width: 250px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border: 2px solid #ff050500; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #282626; /* Light gray background color */
+    padding: 20px; /* Add padding inside the frame */
+    box-sizing: border-box; /* Include border and padding in the total width/height */
+    box-shadow: 0px 0px 10px rgba(49, 48, 48, 0); /* Add shadow for depth */
+   }
+
+/* CSS styles for the content inside the frame */
+h1 {
+position: relative;
+bottom: 41px;
+right: -42px;
+    font-family: Arial,Bold, sans-serif; /* Optional: Set a font family */
+    font-size: 38px; /* Adjust the font size as needed */
+    color: #ffffff; /* Dark text color */
+}
+
+p {
+    position: relative;
+    bottom: 58px;
+    right: 9px;
+        font-family: Arial,Bold, sans-serif; /* Optional: Set a font family */
+        font-size: 38px; /* Adjust the font size as needed */
+        color: #0fcfbf; /* Dark text color */
+    }
+  
+ /* Switch container styles */
+ .switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Common switch styles */
+  .switch {
+    display: inline-block;
+    position: relative;
+    bottom: 82px;
+    left: 72px;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input[type="checkbox"] {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    bottom: 11px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bdc3c7;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  input:checked + .slider {
+    background-color: #3498db; /* Change color for checked switch */
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  /* Slider labels */
+  .label {position: relative;
+bottom: 51px;
+right: 52px;
+    color: #0fcebb;
+    font-size: 32px;
+  }
+
+  /* Custom styles for first toggle */
+  .toggle1 .slider:before {
+    background-color: #1abc9c; /* Custom color for unchecked */
+  }
+
+  .toggle1 input:checked + .slider {
+    background-color: #2ecc71; /* Custom color for checked */
+  }
+
+  /* Custom styles for second toggle */
+  .toggle2 .slider:before {
+    background-color: #1abc9c; /* Custom color for unchecked */
+  }
+
+  .toggle2 input:checked + .slider {
+    background-color: #2ecc71; /* Custom color for checked */
+  }
+
+
+  #userPanel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  body {
+      font-size: 14px; /* Example: decrease font size for better readability on small screens */
+  }
+
+  /* You can add more specific styles for smaller screens here */
+}
